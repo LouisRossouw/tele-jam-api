@@ -1,0 +1,12 @@
+services:
+  tele-jamp-api:
+    build: .
+    image: tele-jamp-api
+    volumes:
+      - ./data:/app/data
+      - ./configs:/app/configs
+    restart: unless-stopped
+    ports:
+      - "5002:5002"
+      # environment:
+      #   - ENV_VAR=your_value
