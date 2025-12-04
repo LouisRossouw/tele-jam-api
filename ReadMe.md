@@ -3,9 +3,10 @@
 ### A simple Telegram notification api service - to centralize logic for my telegram alerts notifications.
 
 - To send a bot a message:
-POST `<base_url>:<port>/notify/bot/<str:bot_name>`
-param: `<str:bot_name>`
-body: `["Hello", "\n\n", "How are thee?😀"]`
+
+-POST `<base_url>:<port>/notify/bot/<str:bot_name>`
+-param: `<str:bot_name>`
+-body: `["Hello", "\n\n", "How are thee?😀"]`
 
 bot.json config:
 ```
