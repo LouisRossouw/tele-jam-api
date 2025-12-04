@@ -39,5 +39,5 @@ config.json:
 .env:
 ```
 telegram_chat_ID=""
-botname_telegram_token="" <<<< botname must match the bot.json env_key key value
+botname1_telegram_token="" <<<< botname must match the bot.json env_key key value
 ```
