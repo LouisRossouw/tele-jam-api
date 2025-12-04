@@ -2,11 +2,13 @@
 
 ### A simple Telegram notification api service - to centralize logic for my telegram alerts notifications.
 
-#### To send a bot a message
+### Setup
+.env:
+```
+telegram_chat_ID=""
+botname1_telegram_token="" <<<< botname must match the bot.json env_key key value
+```
 
-- POST `<base_url>:<port>/notify/bot/<str:bot_name>`
-- param: `<str:bot_name>`
-- body: `["Hello", "\n\n", "How are thee?😀"]`
 
 configs/bot.json config:
 ```
@@ -36,8 +38,9 @@ configs/config.json:
 }
 ```
 
-.env:
-```
-telegram_chat_ID=""
-botname1_telegram_token="" <<<< botname must match the bot.json env_key key value
-```
+
+### To send a bot a message
+
+- POST `<base_url>:<port>/notify/bot/<str:bot_name>`
+- param: `<str:bot_name>`
+- body: `["Hello", "\n\n", "How are thee?😀"]`
