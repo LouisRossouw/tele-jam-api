@@ -9,6 +9,14 @@ telegram_chat_ID=""
 botname1_telegram_token="" <<<< botname must match the bot.json env_key key value
 ```
 
+1. create virtual env: `python -m venv venv`
+2. activate env: `.\venv\Scripts\activate`
+3. install: `pip install -r requirements.txt`
+4. run: `python main.py`
+
+OR
+
+1. Docker: `docker compose up -d --build`
 
 configs/bot.json config:
 ```
