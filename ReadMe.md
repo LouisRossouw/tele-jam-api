@@ -5,7 +5,7 @@
 ### Setup
 .env:
 ```
-telegram_chat_ID=""
+telegram_chat_ID="" <<<< Important
 botname1_telegram_token="" <<<< botname must match the bot.json env_key key value
 ```
 
