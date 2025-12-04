@@ -8,7 +8,7 @@
 - param: `<str:bot_name>`
 - body: `["Hello", "\n\n", "How are thee?😀"]`
 
-bot.json config:
+configs/bot.json config:
 ```
 {
     "bot-name-1": {
@@ -26,7 +26,7 @@ bot.json config:
 }
 ```
 
-config.json:
+configs/config.json:
 ```
 {
     "host": "0.0.0.0",
