@@ -18,7 +18,7 @@ class TelegramAPI:
         self.routes()
 
     def routes(self):
-        @self.app.get("/notify/bot/{bot_name}")
+        @self.app.post("/notify/bot/{bot_name}")
         def notify(bot_name: str, text: List[str]):
 
             bot = Bot(bot_name)
