@@ -1,10 +1,13 @@
 from settings import Settings
+from lib.notification import Notification
+
 from api.server import TelegramAPI
 
 if __name__ == "__main__":
 
     settings = Settings()
-    server = TelegramAPI(settings)
+    notification = Notification(settings)
 
-    server.run(host=settings.config.get('host'),
-               port=settings.config.get('port'))
+    server = TelegramAPI(settings, notification)
+
+    server.run(host=settings.host, port=settings.port)
