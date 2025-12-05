@@ -3,7 +3,9 @@
 ### A simple Telegram notification api service - to centralize logic for my telegram alerts notifications.
 
 ### Setup
+
 .env:
+
 ```
 telegram_chat_ID="" <<<< Important
 botname1_telegram_token="" <<<< botname must match the bot.json env_key key value
@@ -19,6 +21,7 @@ OR
 1. Docker: `docker compose up -d --build`
 
 configs/bot.json config:
+
 ```
 {
     "bot-name-1": {
@@ -37,6 +40,7 @@ configs/bot.json config:
 ```
 
 configs/config.json:
+
 ```
 {
     "host": "0.0.0.0",
@@ -46,9 +50,8 @@ configs/config.json:
 }
 ```
 
-
 ### To send a bot a message
 
-- POST `<base_url>:<port>/notify/bot/<str:bot_name>`
+- POST `<base_url>:<port>/notify/bots/<str:bot_name>`
 - param: `<str:bot_name>`
 - body: `["Hello", "\n\n", "How are thee?😀"]`
