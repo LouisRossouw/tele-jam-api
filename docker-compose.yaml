@@ -1,7 +1,7 @@
 services:
-  tele-jamp-api:
+  tele-jam-api:
     build: .
-    image: tele-jamp-api
+    image: tele-jam-api
     volumes:
       - ./data:/app/data
       - ./configs:/app/configs
